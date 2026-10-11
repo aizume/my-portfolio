@@ -1,0 +1,101 @@
+#work {
+  padding: 100px 10%;
+  background-color: #f9f9f9;
+ 
+  color: #333;
+}
+
+#work h2 {
+
+  margin-bottom: 20px;
+  color: #222; 
+}
+
+.work-description {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.company-list {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.company-list div {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.company-list div:hover {
+  background-color: #eef2f7;
+}
+
+.company-list div.active {
+  background-color: #dbeafe;
+  border-left: 3px solid #3b82f6;
+  font-weight: bold;
+}
+
+.details {
+  flex: 3;
+  min-width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.details h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.details .date {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.details ul {
+  padding-left: 20px;
+}
+
+.details ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* 🔁 Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .company-list {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .company-list div {
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+
+  .details {
+    margin-top: 20px;
+  }
+}

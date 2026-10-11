@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Darawan Promlak - Information Systems Student, UI/UX Designer and Front-end Developer">
+    <meta name="keywords" content="portfolio, web design, UI/UX, front-end development">
+    <meta name="author" content="Darawan Promlak">
+    
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/herd.png">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Darawan Promlak - Portfolio">
+    <meta property="og:description" content=" UI/UX Designer and Front-end Developer">
+  
+    <title>Portfolio | Darawan Promlak</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+    
+    <!-- Your custom CSS should come after Font Awesome -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/certificates.css">
+
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+   
+
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">DP<span>.</span></div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active" >Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <a href="assets/CV_5.pdf" download class="cv-download-btn">
+                    <i class="fas fa-download"></i>  Resume
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+    <div class="hero-content">
+        <span class="greeting gradient-text">Hi, my name is</span>
+        <h1><span class="gradient-text">Darawan Promlak</span></h1>
+       <h2 class="fade-in section-title">IT Support / Software Tester</h2>
+        <p class="description">An Information Systems student focused on IT Support and Software Testing. I find bugs, fix problems, and help people get the most out of technology.</p>    
+        <div class="social-icons">
+            <!-- <a href="https://instagram.com/aizu._me" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a> -->
+            <a href="https://www.facebook.com/jabadkiki" class="social-icon" aria-label="LinkedIn" target="_blank"  rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://line.me/ti/p/ja_badkiki" class="social-icon" aria-label="Line" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-line"></i></a>
+            <a href="https://github.com/AIZUME2975" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:darawan.pom@gmail.com" class="social-icon" aria-label="Email"target="_blank" rel="noopener noreferrer">
+                <i class="far fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</section>
+    <a href="mailto:darawan.pom@gmail.com" class="vertical-email">
+    darawan.pom@gmail.com
+</a>
+
+    <!-- About Section -->
+<section id="about">
+  <h2 class="fade-in section-title">About Me</h2>
+  <div class="about-container fade-in delay-2">
+    <div class="about-content fade-in delay-2">
+      <h3>Hello! I'm <span class="highlight">Darawan Promlak</span> </h3>
+     <p class="about-text">
+            I'm an IT Support and Software Tester with a Bachelor's degree in Information Systems from RMUTI.
+            In my current role, I support users across hardware, software, and networks. I set up and
+            maintain PCs, printers, and LAN/Wi-Fi, and I handle backups, antivirus, and access permissions.
+            On the testing side, I turn requirements into test cases and scenarios, run tests, and write
+            test plans, bug reports, and UAT documents, working closely with developers until each issue is fixed.
+            My background in UX/UI and web development (HTML, CSS, JavaScript, PHP) helps me see problems
+            from the user's side and explain technical issues in simple terms.
+            </p>
+        <div class="about-details">
+        <div class="detail-item fade-in delay-3">
+            <i class="fa-solid fa-headset"></i>
+            <span> IT Support</span>
+        </div>
+        <div class="detail-item fade-in delay-4">
+            <i class="fa-solid fa-bug"></i>
+            <span>Software Tester</span>
+        </div>
+        <div class="detail-item fade-in delay-5">
+            <i class="fa-solid fa-code"></i>
+            <span>Web &amp; UX/UI</span>
+        </div>
+        </div>
+      
+    </div>
+    <div class="profile-image-container">
+        <div class="profile-image-wrapper">
+            <img src="img/004.jpg" alt="Darawan Promlak" class="profile-photo">
+            
+            <!-- วงกลมสีที่เคลื่อนไหว -->
+            <div class="circle-decor circle-1"></div>
+            <div class="circle-decor circle-2"></div>
+            <div class="circle-decor circle-3"></div>
+            
+            
+        </div>
+        </div>
+  </div> 
+</section>
+<section id="work">
+  <h2 class="fade-in section-title">Work Experience</h2>
+
+  <div class="container work-container">
+
+    <div class="company-list">
+      <div class="active" onclick="showWork('kitsomboon', this)">
+        Kitsomboon
+      </div>
+
+      <div onclick="showWork('intern', this)">
+        Internship
+      </div>
+
+      <div onclick="showWork('sales', this)">
+        Sales Admin
+      </div>
+    </div>
+
+    <div class="details" id="workDetails">
+
+      <h3>
+        IT Support / Software Tester
+        <a>@ Kitsomboon Business and Technology Co., Ltd.</a>
+      </h3>
+
+      <p class="date">July 2025 – Sept 2026</p>
+
+      <ul>
+        <li>Provided user support covering hardware, software, and network issues</li>
+
+        <li>
+          Installed, maintained, and repaired computer equipment
+          (PCs, printers, switches, routers), including LAN/Wi-Fi systems
+        </li>
+
+        <li>
+          Managed data backup and basic security
+          (backup, antivirus, firewall, permissions), and coordinated with external vendors
+        </li>
+
+        <li>
+          Studied requirements to design test cases and test scenarios,
+          and tested systems to cover all functions
+        </li>
+
+        <li>
+          Prepared test plans, test reports, bug reports, and UAT documents,
+          reported defects, and retested fixes with the development team
+        </li>
+
+        <li>
+          Prepared key documents such as employment contracts and official government letters,
+          and used e-Government systems to submit work to government agencies
+        </li>
+
+        <li>
+          Coordinated with clients and advised staff on using IT equipment and systems
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="fade-in section-title">My Skills</h2>
+        <div class="skills-container fade-in">
+            <div class="skills-category">
+                <!-- แก้ส่วน Soft Skills -->
+<div class="skills-category">
+    <h3 style="text-align: center;">Soft Skills</h3><br>
+    <div class="soft-skills-grid">
+        <div class="soft-skill-item">
+            <i class="fas fa-comments"></i>
+            <h4>Communication & Teamwork</h4>
+            <p>Effective communication and collaboration with teams to achieve goals.</p>
+        </div>
+        <div class="soft-skill-item">
+            <i class="fas fa-lightbulb"></i>
+            <h4>Problem Solving & Adaptability</h4>
+            <p>Creative problem-solving and adaptability to new challenges.</p>
+        </div>
+        <div class="soft-skill-item">
+            <i class="fas fa-tasks"></i>
+            <h4>Leadership & Time Management</h4>
+            <p>Leadership skills and the ability to prioritize tasks effectively.</p>
+        </div>
+    </div>
+</div>
+
+<h3 style="text-align: center;">Hard Skills</h3><br>
+<div class="skills-grid">
+  <div class="skill-item">
+    <i class="fas fa-bug"></i>
+    <h4>Software Testing</h4>
+    <div class="skill-details">
+      <span class="skill-tag">Test Case / Test Scenario</span>
+      <span class="skill-tag">Test Plan</span>
+      <span class="skill-tag">Test Report</span>
+      <span class="skill-tag">Bug Report</span>
+      <span class="skill-tag">UAT Documents</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress" style="width: 70%"></div>
+    </div>
+  </div>
+
+  <div class="skill-item">
+    <i class="fas fa-headset"></i>
+    <h4>IT Support</h4>
+    <div class="skill-details">
+      <span class="skill-tag">User Support</span>
+      <span class="skill-tag">PC / Printer</span>
+      <span class="skill-tag">LAN / Wi-Fi</span>
+      <span class="skill-tag">Backup</span>
+      <span class="skill-tag">Antivirus / Firewall</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress" style="width: 65%"></div>
+    </div>
+  </div>
+
+  <div class="skill-item">
+    <i class="fas fa-code"></i>
+    <h4>Web Development</h4>
+    <div class="skill-details">
+      <span class="skill-tag">HTML5 / CSS3</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">PHP</span>
+      <span class="skill-tag">SQL (Basic)</span>
+      <span class="skill-tag">Node.js (Basic)</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress" style="width: 50%"></div>
+    </div>
+  </div>
+
+  <div class="skill-item">
+    <i class="fas fa-toolbox"></i>
+    <h4>Tools</h4>
+    <div class="skill-details">
+      <span class="skill-tag">Microsoft Office</span>
+      <span class="skill-tag">Figma</span>
+      <span class="skill-tag">Canva</span>
+      <span class="skill-tag">Gemini (AI)</span>
+      <span class="skill-tag">Claude (AI)</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress" style="width: 75%"></div>
+    </div>
+  </div>
+</div>
+            </div>
+
+            
+        </div>
+    </section>
+
+
+
+<section id="portfolio">
+  <h2 class="fade-in section-title">Projects I've Worked On</h2>
+
+  <!-- ===== Work Projects (Kitsomboon) ===== -->
+<div class="project-card">
+  <div class="project-image"
+        data-images="img/aqm.png, img/aqm-2.png, img/aqm-3.png, img/aqm-4.png"> 
+    <img src="img/aqm.png" alt="Air Quality Monitor Reporting System">
+  </div>
+  <div class="project-content">
+    <p class="featured-label">Work Project · QA &amp; UAT</p>
+    <h3 class="project-title">Air Quality Monitor (AQM) Reporting System</h3>
+    <p class="project-description">
+      A web and mobile application for the Thailand Institute of Nuclear Technology (TINT) that shows
+      real-time data from IoT air quality sensors (radon, PM2.5, PM10, CO₂ and more) with risk alerts.
+      I tested every user role in detail, reported bugs to the developers, prepared UAT and handover
+      documents, wrote the user manual, and coordinated with the client on IT matters.
+    </p>
+    <p class="tech-used">Test Case • Bug Report • UAT • User Manual • Handover Documents</p>
+  </div>
+</div>
+
+<div class="project-card reverse">
+  <div class="project-image"
+       data-images="img/smartfarm.png, img/smartfarm-2.png, img/smartfarm-3.png, img/smartfarm-4.png, img/smartfarm-5.png">
+    <img src="img/smartfarm.png" alt="Smart Farm Website">
+  </div>
+  <div class="project-content">
+    <p class="featured-label">Work Project · QA &amp; UAT</p>
+    <h3 class="project-title">Smart Farm Promotional Website</h3>
+    <p class="project-description">
+      A website promoting a Smart Farm solution, built for a private-sector client.
+      I tested the website, reported bugs, prepared UAT and handover documents,
+      and coordinated between the client and the development team.
+    </p>
+    <p class="tech-used">Testing • Bug Report • UAT • Handover Documents</p>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="project-image"
+       data-images="img/smartadmin.png, img/smartadmin-2.png, img/smartadmin-3.png">
+    <img src="img/smartadmin.png" alt="Smart Admin Patient Referral Queue System">
+  </div>
+  <div class="project-content">
+    <p class="featured-label">Work Project · QA &amp; UAT</p>
+    <h3 class="project-title">Smart Admin – Patient Referral Queue System</h3>
+    <p class="project-description">
+      A system for tracking the queue and status of patient referrals.
+      I tested each user role in detail, reported bugs, prepared UAT documents
+      and the user manual, and coordinated with the client and developers.
+    </p>
+    <p class="tech-used">Test Case • Bug Report • UAT • User Manual</p>
+  </div>
+</div>
+
+  <!-- ===== Personal / Internship Projects ===== -->
+  <div class="project-card reverse">
+    <div class="project-image">
+      <img src="img/index.png" alt="Exam Proctoring System">
+    </div>
+    <div class="project-content">
+      <p class="featured-label">Internship Project</p>
+      <h3 class="project-title">Exam Proctoring System</h3>
+      <p class="project-description">
+        Developed a web-based system for managing proctoring schedules and assignments during exam periods.
+      </p>
+      <p class="tech-used">PHP • HTML • JavaScript • Bootstrap 5 • MySQL</p>
+      <div class="project-links">
+        <a href="https://github.com/aizume/exam_proctorr.git" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-image">
+      <img src="img/repair2.png" alt="Air Conditioning Repair System">
+    </div>
+    <div class="project-content">
+      <p class="featured-label">Academic Project</p>
+      <h3 class="project-title">Air Conditioning Repair Notification System</h3>
+      <p class="project-description">
+        Built a web application for managing air conditioning repair requests and maintenance schedules.
+      </p>
+      <p class="tech-used">HTML • CSS • PHP • JavaScript • MySQL</p>
+      <div class="project-links">
+        <a href="https://ict.fet.rmuti.ac.th/repair/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        <a href="https://github.com/aizume/repair2.git" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card reverse">
+    <div class="project-image">
+      <img src="img/wastewise/test.png" alt="Waste Exchange System Preview">
+    </div>
+    <div class="project-content">
+      <p class="featured-label">Concept Project</p>
+      <h3 class="project-title">Waste Exchange Points System</h3>
+      <p class="project-description">
+        A conceptual system for exchanging waste, focusing on UI/UX design and functionality design using Figma and data analysis tools.
+      </p>
+      <p class="tech-used">Figma • Data Analysis Tools</p>
+      <div class="project-links">
+        <a href="https://github.com/aizume/album.git" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Image Lightbox -->
+<div id="imageLightbox" class="image-lightbox">
+
+  <button class="lightbox-close" id="lightboxClose">
+    &times;
+  </button>
+
+  <button class="lightbox-prev" id="lightboxPrev">
+    &#10094;
+  </button>
+
+  <div class="lightbox-main">
+    <img id="lightboxImage" src="" alt="">
+
+    <div id="lightboxCounter" class="lightbox-counter">
+      1 / 1
+    </div>
+  </div>
+
+  <button class="lightbox-next" id="lightboxNext">
+    &#10095;
+  </button>
+
+</div>
+<script>
+
+
+
+
+
+</script>
+<!-- Tech Stack -->
+<section>
+    <h2 class="fade-in section-title">Tech Stack</h2>
+    <div class="tech-stack fade-in">
+        <img src="img/windows-logo.png" alt="Windows" title="Windows - ติดตั้ง ตั้งค่า และแก้ปัญหาเครื่องผู้ใช้งานในองค์กร">
+        <img src="img/office-logo.png" alt="Microsoft Office" title="Microsoft Office - ใช้ทำเอกสาร Test Plan, Test Case, UAT และหนังสือราชการ">
+        <img src="img/html-logo.png" alt="HTML" title="HTML - ใช้สร้างโครงสร้างหน้าเว็บ">
+        <img src="img/css-logo.png" alt="CSS" title="CSS - ใช้จัดสไตล์และเลย์เอาต์หน้าเว็บ">
+        <img src="img/js-logo.png" alt="JavaScript" title="JavaScript - เขียนส่วนโต้ตอบบนหน้าเว็บได้">
+        <img src="img/php-logo.jpeg" alt="PHP" title="PHP - เคยใช้พัฒนาเว็บระบบเลือกการคุมสอบช่วงสหกิจศึกษา">
+        <img src="img/mysql-logo.jpeg" alt="MySQL" title="MySQL - เขียน SQL ระดับพื้นฐาน เช่น ดึงข้อมูลเพื่อตรวจผลการทดสอบ">
+        <img src="img/nodejs-logo.png" alt="Node.js" title="Node.js - ระดับพื้นฐาน">
+        <img src="img/figma-logo.jpeg" alt="Figma" title="Figma - ใช้ออกแบบ UX/UI หน้าเว็บ">
+        <img src="img/canva-logo.png" alt="Canva" title="Canva - ใช้ออกแบบสื่อประชาสัมพันธ์">
+        <img src="img/gemini-logo.png" alt="Gemini" title="Gemini - ใช้ช่วยร่างเอกสารและค้นหาข้อมูล">
+        <img src="img/docker-logo.jpeg" alt="Docker" title="Docker - ระดับพื้นฐาน ใช้รันระบบในคอนเทนเนอร์เพื่อทดสอบ">
+        <img src="img/claude-logo.png" alt="Claude" title="Claude - ใช้ช่วยร่างเอกสาร เขียนโค้ด และวางแผนการทดสอบ">
+        <img src="img/deepseek-logo.png" alt="DeepSeek" title="DeepSeek - ใช้ช่วยค้นหาข้อมูลและร่างเอกสาร">
+    </div>
+</section>
+<!-- Certificates Section -->
+<section id="certificates">
+    <h2 class="fade-in section-title">Certificates</h2>
+    <div class="certificates-container fade-in delay-2">
+
+        <div class="certificate-card">
+            <img src="img/certificates/borntodev-academy_ChatGPT for Developers_certificate.png" 
+                 alt="Certificate 1" 
+                 class="popup-img">
+            <div class="certificate-info">
+                <h4>ChatGPT for Developers</h4>
+            </div>
+        </div>
+
+        <div class="certificate-card">
+            <img src="img/certificates/borntodev-academy_Lite _ Fundamental Web Dev with HTML5 & CSS3_certificate.png" 
+                 alt="Certificate 2" 
+                 class="popup-img">
+            <div class="certificate-info">
+                <h4>Web Dev with HTML5 & CSS3</h4>
+            </div>
+        </div>
+
+            <div class="certificate-card">
+                <img src="img/certificates/007.png" 
+                 alt="Certificate 3" 
+                 class="popup-img">
+                <div class="certificate-info">
+                <h4>Business Model Canvas</h4>
+                </div>
+            </div>
+        <div class="certificate-card">
+            <img src="img/certificates/Ecchfi.png" 
+            alt="EC-Council Computer Hacking Forensic Investigator (C|HFI) Certificate" 
+            class="popup-img">
+            <div class="certificate-info">
+                <h4>Computer Hacking Forensic Investigator (C|HFI)</h4>
+                <p>EC-Council · Issued on 19 Dec. 2025</p>
+            </div>     
+        </div>
+       
+                    <div class="certificate-card">
+                            <img src="img/certificates/computer-1.png" 
+                            alt="Certificate 3" 
+                            class="popup-img">
+                        <div class="certificate-info">
+                            <h4>Computer Graphic</h4>
+                        </div>
+                    </div>
+    </div>
+</section>
+
+<!-- Fullscreen Popup Viewer -->
+<div id="image-popup" class="image-popup">
+    <span class="close-btn">&times;</span>
+    <img id="popup-image" src="" alt="Full certificate">
+</div>
+
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+         <h2 class="fade-in section-title">Contact Me</h2>
+        <div class="contact-container fade-in">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <div style="text-align: center;">
+                        <h3>Let's Connect!</h3>
+                        <p>Please feel free to reach out for collaborations or a friendly conversation.</p>
+                        <p> I would be delighted to hear from you.</p>
+                    </div>
+                    <div class="contact-details">
+                        <a href="mailto:darawan.pom@gmail.com" class="contact-item">
+                            <i class="far fa-envelope"></i>
+                            <span>darawan.pom@gmail.com</span>
+                        </a>
+                        <a href="tel:0953521519" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>095-352-1519</span>
+                        </a>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bangkok, Thailand</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <!-- <div href="https://instagram.com/aizu._me" class="social-link"><i class="fab fa-instagram"></i></div> -->
+                    <div href="https://www.facebook.com/jabadkiki" class="social-link"><i class="fab fa-facebook"></i></div>
+                    <div href="https://line.me/ti/p/ja_badkiki" class="social-link"><i class="fab fa-line"></i></div>
+                    <div href="https://github.com/AIZUME2975" class="social-link"><i class="fab fa-github"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <button onclick="scrollToTop()" class="back-to-top" title="กลับขึ้นบนสุด">
+    <i class="fas fa-arrow-up"></i>
+</button>
+    <footer class="footer">
+    <p>&copy; 2025 Darawan Promlak. All rights reserved.</p>
+    </footer>
+</body>
+
+
+    <script src="script.js"></script>
+      
+ 

@@ -1,0 +1,181 @@
+/* About Section Styling */
+#about {
+    padding: 100px 5%;
+    background: #ffffff;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-content {
+    padding-right: 2rem;
+}
+
+.about-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.about-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.detail-item {
+    padding: 1.2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.detail-item:hover {
+    transform: translateY(-5px);
+}
+
+.detail-item i {
+    font-size: 1.5rem;
+    color: #2A54F5;
+    margin-bottom: 0.8rem;
+}
+
+.detail-item span {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+}
+
+.profile-image-container {
+    position: relative;
+}
+
+.profile-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Decorative Elements */
+.circle-decor {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.circle-1 {
+    width: 100px;
+    height: 100px;
+    background: #2A54F5;
+    top: -20px;
+    left: -20px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.circle-2 {
+    width: 80px;
+    height: 80px;
+    background: #33E5BB;
+    bottom: -10px;
+    right: -10px;
+    animation: float 8s ease-in-out infinite;
+}
+
+.circle-3 {
+    width: 60px;
+    height: 60px;
+    background: #2A54F5;
+    top: 50%;
+    right: -30px;
+    animation: float 7s ease-in-out infinite;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: #2A54F5;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(42, 84, 245, 0.3);
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .profile-image-wrapper {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        padding: 60px 5%;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-details {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

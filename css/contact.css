@@ -1,0 +1,225 @@
+/* Contact Section */
+#contact {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="rgba(78,84,200,0.1)" stroke-width="0.5"/></svg>');
+    background-size: 50px 50px;
+    opacity: 0.3;
+}
+
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+/* Optional decorative underline */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    border-radius: 2px;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    perspective: 1000px;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(78,84,200,0.05) 0%, rgba(143,148,251,0.1) 100%);
+    transform: rotate(30deg);
+    z-index: 0;
+}
+
+.contact-info {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    color: #4e54c8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #444;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: rgba(245, 245, 245, 0.7);
+    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-item:hover {
+    transform: translateX(10px);
+    background: rgba(78, 84, 200, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item i {
+    font-size: 1.3rem;
+    color: #4e54c8;
+    min-width: 25px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(78, 84, 200, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+}
+
+.social-link:hover {
+    transform: translateY(-5px) rotate(5deg);
+    box-shadow: 0 8px 15px rgba(78, 84, 200, 0.4);
+}
+
+.social-link:hover::before {
+    left: 100%;
+}
+
+/* Floating animation for contact card */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotateY(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotateY(5deg);
+    }
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    #contact {
+        padding: 60px 0;
+    }
+    
+    #contact h2 {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+    
+    .contact-card {
+        padding: 30px;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-card {
+        padding: 25px 20px;
+    }
+    
+    .contact-item {
+        padding: 10px 15px;
+    }
+    
+    .social-links {
+        gap: 15px;
+    }
+}
